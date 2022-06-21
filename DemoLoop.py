@@ -48,3 +48,23 @@ print([i**2 for i in lst if i > 5])
 #Tuple에 담은 데이터
 tp = ("apple", "orange", "kiwi")
 print([len(i) for i in tp])
+
+
+#필터링 하는 함수
+lst = [10, 25, 30]
+iterL = filter(None, lst)
+for item in iterL:
+    print(item)
+
+print("---필터링---")
+def getBiggerThan20(i):
+    return i > 20
+
+iterL = filter(getBiggerThan20, lst)
+for item in iterL:
+    print(item)
+
+print("---람다함수---")
+iterL = filter(lambda i:i>20, lst)
+for item in iterL:
+    print(item)
