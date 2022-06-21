@@ -64,7 +64,7 @@ iterL = filter(getBiggerThan20, lst)
 for item in iterL:
     print(item)
 
-print("---람다함수---")
+print("---람다함수---")    
 iterL = filter(lambda i:i>20, lst)
 for item in iterL:
     print(item)
