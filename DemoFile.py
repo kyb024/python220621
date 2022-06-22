@@ -23,8 +23,9 @@ print("{0:f}".format(4/3))
 print("{0:.2f}".format(4/3))
 
 #파일 생성
-f = open("c:\\work\\demo.txt",)
+f = open("c:\\work\\demo.txt","wt")
 f.write()
+f.close()
 
 
 #파일을 읽기
